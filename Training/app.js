@@ -125,14 +125,27 @@
 //     return num.toString();
 // }
 
-//EXERCISE : Write a function called repeatStr which repeats the given string exactly n times. 
-//Example: RepeatStr(5, "Hello") // "HelloHelloHelloHelloHello" 
+// EXERCISE : Write a function called repeatStr which repeats the given string exactly n times. 
+// Example: RepeatStr(5, "Hello") // "HelloHelloHelloHelloHello" 
 
-function repeatStr (n, s) {
-    let newStr = '' //creating new empty string
-    while (n > 0) {
-        newStr += s // same as newStr = newStr + s
-        n -- // subtracting 1 each time it loops
-    }
-    return newStr
-  }
+// function repeatStr (n, s) {
+//     let newStr = '' //creating new empty string
+//     while (n > 0) {
+//         newStr += s // same as newStr = newStr + s
+//         n -- // subtracting 1 each time it loops
+//     }
+//     return newStr
+//   } 
+
+// EXERCISE: Create a function that checks if a number n is divisible by two numbers x AND y. All inputs are positive, non-zero digits.
+// function isDivisible(n, x, y) {
+//     if (n % x === 0 && n % y === 0) {
+//         return true
+//     }
+//     return false
+// }
+
+// //BETTER PRACTICE METHOD BELOW: 
+// function isDivisible(n, x, y) {
+//     return n % x === 0 && n % y === 0
+//   }
