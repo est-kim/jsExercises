@@ -182,3 +182,20 @@
 //     }
 //     return doubledArray
 // }
+// *** TRY ABOVE CODE AGAIN WITH MAP**
+
+
+// EXERCISE : Write a function which calculates the average of the numbers in a given list.
+// Note: Empty arrays should return 0.
+
+// const array = []
+// let sum = 0
+
+// function find_average(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         sum += array[i]
+//     }
+//     let average = sum / array.length
+//     console.log(average)
+//     // return 0;
+//   }
