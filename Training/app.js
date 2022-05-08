@@ -149,3 +149,36 @@
 // function isDivisible(n, x, y) {
 //     return n % x === 0 && n % y === 0
 //   }
+
+// EXERCISE: Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+// The output should be two capital letters with a dot separating them.
+// It should look like this: Sam Harris => S.H
+
+// const name = ''
+// function abbrevName(name){
+//     const splits = name.split(' ', 2)
+//     const firstName = splits[0]
+//     const lastName = splits[1]
+//     const firstNameLetter = firstName.charAt(0).toUpperCase()
+//     const lastNameLetter = lastName.charAt(0).toUpperCase()
+//     return(`${firstNameLetter}.${lastNameLetter}`)
+// }
+
+// //BETTER PRACTICE METHOD BELOW: 
+// function abbrevName(name){
+//     let nameArray = name.split(" ");
+//     return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+//   }
+
+// EXERCISE: Given an array of integers, return a new array with each value doubled.
+// const x = [2, 2, 2, 2, 2, 2]
+// const doubledArray = []
+
+// function maps(x){
+//     for (let i = 0; i < x.length; i++) {
+//         let dub = x[i]
+//         let dubb = dub * 2
+//         doubledArray.push(dubb) 
+//     }
+//     return doubledArray
+// }
