@@ -202,22 +202,35 @@
 
 // EXERCISE: Create a Grocery List using DOM manipulation and forms 
 //Must refresh once submitting, and add new product and qty to a list below
-const form = document.querySelector('#form')
-const listContainer = document.querySelector('#list')
+// const form = document.querySelector('#form')
+// const listContainer = document.querySelector('#list')
 
-form.addEventListener('submit', function (e) {
-    e.preventDefault() // stays on site without moving to another page
-    const productInput = form.elements.product //can access elements by name
-    const qtyInput = form.elements.qty
-    addInput( productInput.value, qtyInput.value )
-    productInput.value = '' // resets it back to empty
-    qtyInput.value = '' //resets it back to empty 
-})
+// form.addEventListener('submit', function (e) {
+//     e.preventDefault() // stays on site without moving to another page
+//     const productInput = form.elements.product //can access elements by name
+//     const qtyInput = form.elements.qty
+//     addInput( productInput.value, qtyInput.value )
+//     productInput.value = '' // resets it back to empty
+//     qtyInput.value = '' //resets it back to empty 
+// })
 
-//created a new function 
-const addInput = ( productInput, qtyInput ) => {
-    const newInput = document.createElement('li')
-    newInput.append(qtyInput)
-    newInput.append(` ${productInput}`)
-    listContainer.append(newInput)
-}
+// //created a new function 
+// const addInput = ( productInput, qtyInput ) => {
+//     const newInput = document.createElement('li')
+//     newInput.append(qtyInput)
+//     newInput.append(` ${productInput}`)
+//     listContainer.append(newInput)
+// }
+
+//EXERCISE: Whenever an input event is fired on the input element, update the h1 so that it displays 'Welcome, ' plus the current value from
+// the text input. If the input goes back to being empty, update the h1 so that it once again says 'Enter Your Username'
+const input = document.querySelector('input')
+const h1 = document.querySelector('h1')
+
+
+input.addEventListener('input', function (e) {
+    h1.innerText = `Welcome, ${input.value}`
+    if (input.value === '') {
+        h1.innerText = 'Enter Your Username'
+    }
+}) 
