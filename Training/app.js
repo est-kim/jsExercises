@@ -199,3 +199,25 @@
 //     console.log(average)
 //     // return 0;
 //   }
+
+// EXERCISE: Create a Grocery List using DOM manipulation and forms 
+//Must refresh once submitting, and add new product and qty to a list below
+const form = document.querySelector('#form')
+const listContainer = document.querySelector('#list')
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault() // stays on site without moving to another page
+    const productInput = form.elements.product //can access elements by name
+    const qtyInput = form.elements.qty
+    addInput( productInput.value, qtyInput.value )
+    productInput.value = '' // resets it back to empty
+    qtyInput.value = '' //resets it back to empty 
+})
+
+//created a new function 
+const addInput = ( productInput, qtyInput ) => {
+    const newInput = document.createElement('li')
+    newInput.append(qtyInput)
+    newInput.append(` ${productInput}`)
+    listContainer.append(newInput)
+}
