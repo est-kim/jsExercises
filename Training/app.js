@@ -266,3 +266,5 @@
 
 // //BETTER PRACTICE METHOD BELOW: 
 // const check = (a,x) => a.includes(x); 
+
+//EXERCISE: Get the sum of 2 arrays
