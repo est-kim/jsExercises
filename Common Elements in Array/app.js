@@ -30,5 +30,6 @@ const commonElements = (arr1, arr2) => {
 // var test2 = commonElements(["1","2",3], [2, 4, 6]) 
 // console.log(test2) // []
 
+
 // var test3 = commonElements([true, "orange", "APPLE", "pineapple"], [false, "orange", "apple", "pineapple"]) 
 // console.log(test3) // ["orange", "pineapple"]
