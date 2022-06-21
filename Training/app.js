@@ -268,3 +268,44 @@
 // const check = (a,x) => a.includes(x); 
 
 //EXERCISE: Get the sum of 2 arrays
+
+// let arr1 = [-2,2,2]
+// let arr2 = [2,2,2]
+// let sumArr1 = 0
+// let sumArr2 = 0
+
+// function arrayPlusArray(arr1, arr2) {
+//     for (let i = 0; i < arr1.length; i++) {
+//         sumArr1 += arr1[i]
+//     }
+//     console.log(sumArr1)
+//     for (let j = 0; j < arr2.length; j++) {
+//         sumArr2 += arr2[j]
+//     }
+//     console.log(sumArr2)
+//     return sumArr1 + sumArr2
+// }
+
+
+// console.log(arrayPlusArray(arr1, arr2))
+
+//EXERCISE:  Calculate BMI
+//Write function bmi that calculates body mass index (bmi = weight / height^2).
+// if bmi <= 18.5 return "Underweight"
+// if bmi <= 25.0 return "Normal"
+// if bmi <= 30.0 return "Overweight"
+// if bmi > 30 return "Obese"
+
+function bmi(weight, height) {
+    let bmiCalc = weight / (height ** 2)
+    if (bmiCalc <= 18.5) {
+        return 'Underweight'
+    } else if (bmiCalc <= 25.0) {
+        return 'Normal'
+    } else if (bmiCalc <= 30.0) {
+        return 'Overweight'
+    } else {
+        return 'Obese'
+    }
+  }
+
