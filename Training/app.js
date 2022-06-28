@@ -296,16 +296,21 @@
 // if bmi <= 30.0 return "Overweight"
 // if bmi > 30 return "Obese"
 
-function bmi(weight, height) {
-    let bmiCalc = weight / (height ** 2)
-    if (bmiCalc <= 18.5) {
-        return 'Underweight'
-    } else if (bmiCalc <= 25.0) {
-        return 'Normal'
-    } else if (bmiCalc <= 30.0) {
-        return 'Overweight'
-    } else {
-        return 'Obese'
-    }
-  }
+// function bmi(weight, height) {
+//     let bmiCalc = weight / (height ** 2)
+//     if (bmiCalc <= 18.5) {
+//         return 'Underweight'
+//     } else if (bmiCalc <= 25.0) {
+//         return 'Normal'
+//     } else if (bmiCalc <= 30.0) {
+//         return 'Overweight'
+//     } else {
+//         return 'Obese'
+//     }
+//   }
 
+//EXERCISE: Make a function that will return a greeting statement that uses an input; your program should return, "Hello, <name> how are you doing today?".
+
+// function greet(name){
+//     return `Hello, ${name} how are you doing today?`
+// }
