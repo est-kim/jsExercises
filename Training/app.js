@@ -319,6 +319,28 @@
 //We will consider a, e, i, o, u as vowels for this Kata (but not y).
 //The input string will only consist of lower case letters and/or spaces.
 
-function getCount(str) {
-    return str.replace(/[^aeiou]/gi, "").length;
-}
+// function getCount(str) {
+//     return str.replace(/[^aeiou]/gi, "").length;
+// }
+
+
+//EXERCISE: Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+// function XO(str) {
+//     let x = 0, 
+//         o = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i].toLowerCase() === "x") {
+//             x++;
+//         } else if (str[i].toLowerCase() === "o") {
+//             o++;
+//         }
+//     }
+//     return x === o;
+// }
+
+// //BETTER PRACTICE: 
+// function XO(str) {
+//     let x = str.match(/x/gi);
+//     let o = str.match(/o/gi);
+//     return (x && x.length) === (o && o.length);
+//   }
