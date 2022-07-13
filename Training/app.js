@@ -356,3 +356,18 @@
 //     }, words[0])
 //     return shortest.length
 // }
+
+//EXERCISE: Odd or even?
+// Given a list of integers, determine whether the sum of its elements is odd or even.
+
+// function oddOrEven(array) {
+//     let initialValue = 0
+//     const sumWithInitial = array.reduce(
+//         (previousValue, currentValue) => previousValue + currentValue,
+//         initialValue)
+//         if (sumWithInitial % 2 == 0) {
+//             return "even"
+//         } else {
+//             return "odd"
+//         }
+// }
