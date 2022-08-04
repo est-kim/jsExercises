@@ -403,14 +403,24 @@
 //   .join(' ')
 
 //EXERCISE: In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". Your function receives one side of the DNA (string, except for Haskell); you need to return the other complementary side. DNA strand is never empty or there is no DNA at all (again, except for Haskell).
-function DNAStrand(dna){
-  let sequence = {
-    "A": "T",
-    "T": "A",
-    "G": "C",
-    "C": "G"
-  }
-  return dna.replace(/A|T|G|C/g, function(matched){
-    return sequence[matched];
-  });
+// function DNAStrand(dna){
+//   let sequence = {
+//     "A": "T",
+//     "T": "A",
+//     "G": "C",
+//     "C": "G"
+//   }
+//   return dna.replace(/A|T|G|C/g, function(matched){
+//     return sequence[matched];
+//   });
+// }
+
+// function greet(){
+//   return 'hello world!'
+// }
+
+const isPrime = num => {
+  for(let i = 2, s = Math.sqrt(num); i <= s; i++)
+      if(num % i === 0) return false; 
+  return num > 1;
 }
