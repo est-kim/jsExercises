@@ -419,12 +419,14 @@
 //   return 'hello world!'
 // }
 
-const isPrime = num => {
-  for(let i = 2, s = Math.sqrt(num); i <= s; i++)
-      if(num % i === 0) return false; 
-  return num > 1;
-}
+// const isPrime = num => {
+//   for(let i = 2, s = Math.sqrt(num); i <= s; i++)
+//       if(num % i === 0) return false; 
+//   return num > 1;
+// }
 
 
-//EXERCISE: Given an array of integers, find the one that appears an odd number of times.
-//There will always be only one integer that appears an odd number of times.
+//EXERCISE: Given a number return the closest number to it that is divisible by 10.
+// const closestMultiple10 = num => {
+//   return Math.round(num / 10) * 10
+// }
