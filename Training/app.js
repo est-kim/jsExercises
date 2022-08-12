@@ -430,3 +430,6 @@
 // const closestMultiple10 = num => {
 //   return Math.round(num / 10) * 10
 // }
+
+//EXERCISE: Create a function that takes an array of letters, and combines them into words in a sentence.
+
