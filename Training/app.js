@@ -432,4 +432,7 @@
 // }
 
 //EXERCISE: Create a function that takes an array of letters, and combines them into words in a sentence.
-
+//EXERCISE: Write a function which converts the input string to uppercase.
+function makeUpperCase(str) {
+    return str.toUpperCase()
+  }
