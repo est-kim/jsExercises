@@ -440,28 +440,39 @@
 //EXERCISE: Usually when you buy something, you're asked whether your credit card number, phone number or answer to your most secret question is still correct. However, since someone could look over your shoulder, you don't want that shown on your screen. Instead, we mask it.
 //Your task is to write a function maskify, which changes all but the last four characters into '#'.
 
-function maskify(cc) {
-  // If length is greater than 4, then we have things to mask
-  if (cc.length > 4) {
-      // reverse string
-      let reversed = reverse(cc);
-      let newString = '';
-      for (let i = 0; i < reversed.length; i++) {
-        // if i < 4, we want to reveal these numbers in our output
-        if (i < 4) {
-          newString += reversed[i];
-        } else {
-          // otherwise, just hide it
-          newString += '#';
-        }
-      }
-      // return the reversal of the string to revert it back to original format
-      return reverse(newString);
-  } else {
-      return cc;
+// function maskify(cc) {
+//   // If length is greater than 4, then we have things to mask
+//   if (cc.length > 4) {
+//       // reverse string
+//       let reversed = reverse(cc);
+//       let newString = '';
+//       for (let i = 0; i < reversed.length; i++) {
+//         // if i < 4, we want to reveal these numbers in our output
+//         if (i < 4) {
+//           newString += reversed[i];
+//         } else {
+//           // otherwise, just hide it
+//           newString += '#';
+//         }
+//       }
+//       // return the reversal of the string to revert it back to original format
+//       return reverse(newString);
+//   } else {
+//       return cc;
+//   }
+// }
+// function reverse(str) {
+//   return str.split("").reverse().join("");
+// }
+
+//EXERCISE: Your team is writing a fancy new text editor and you've been tasked with implementing the line numbering.
+//Write a function which takes a list of strings and returns each line prepended by the correct number.
+//The numbering starts at 1. The format is n: string. Notice the colon and space in between.
+
+let number = function(array) {
+  let output = []
+  for(let i = 0; i < array.length; i++) {
+    output.push((i + 1) + ": " + array[i])
   }
-}
- 
-function reverse(str) {
-  return str.split("").reverse().join("");
+  return output
 }
